@@ -29,20 +29,21 @@
         </div>
       </div>
       <h1>Contact</h1>
-      <form action="#" method="post" id="form">
+      <form action="#" id="form">
         <div class="label">
           <label for="name">お名前<span class="hissu">(※必須)</span></label><br>
-          <input type="text" id="name" name="name" value="" equired>
+          <input type="text" id="name" name="name" value="" required>
         </div>
         <div class="label">
           <label for="email">メールアドレス<span class="hissu">(※必須)</span></label><br>
-          <input type="text" id="email" name="email" value="" equired>
+          <input type="text" id="email" name="email" value="" required>
+          <p id="result"></p>
         </div>
         <div class="label">
           <label for="message">お問い合わせ内容</label><br>
           <textarea id="message" name="message"></textarea>
         </div>
-        <button type="submit" id="button" disabled>送信</button>
+        <button type="submit" id="button">送信</button>
       </form>
     </main>
     <!--script.jsを読み込み-->
