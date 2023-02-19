@@ -1,0 +1,821 @@
+/*共通部分 開始*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+header {
+  display: block;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 15px 0;
+  border-bottom: 1px solid black;
+  background-color: white;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 0 20px;
+  font-size: 25px;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.logo_box {
+  position: absolute;
+  top: 150px;
+  z-index: 9998;
+  width: 450px;
+  height: 250px;
+  background-color: rgba(241, 241, 241, 0.7);
+}
+
+.logo {
+  font-size: 50px;
+  font-family: 'Trebuchet MS', sans-serif;
+  line-height: 70px;
+  text-align: center;
+}
+
+.bottom {
+  margin-top: 60px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/*メインスライド*/
+.slider {
+  display: flex;
+  list-style: none;
+  width: 100vw;
+  height: 85vh;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.name_section {
+  padding: 15px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Trebuchet MS', sans-serif;
+  text-align: left;
+}
+
+.profile {
+  margin-top: 90px;
+}
+
+figure.left_img img {
+  width: 250px;
+  height: 250px;
+}
+
+.name {
+  font-size: 30px;
+  font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
+  line-height: 100px;
+}
+
+.skill {
+  width: 100%;
+  margin-top: 90px;
+}
+
+.flex_skill::after {
+  display: block;
+  content: "";
+  width: 410px;
+  font-weight: 300;
+}
+
+.text_skill {
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 25px;
+  font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
+  vertical-align: top;
+}
+
+.flex_work_item {
+  width: 350px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid rgb(244, 244, 244);
+  box-shadow: 10px 10px 5px 0 rgb(244, 244, 244);
+  text-align: center;
+}
+
+.title_work {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btn_code:hover {
+  background-color: rgb(38, 98, 130);
+}
+
+.btn_site:hover {
+  background-color: rgb(194, 139, 10);
+}
+
+.text_work {
+  width: 300px;
+  margin-left: 25px;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
+  text-align: left;
+}
+
+.text_content_work {
+  width: 300px;
+  margin-left: 25px;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
+  text-align: left;
+}
+
+/*共通部分 終了*/
+
+
+
+
+
+/*PC 開始*/
+@media screen and (min-width: 1281px) {
+  /*ウィンドウ幅が1281px以上の場合に適用*/
+  .logo_box {
+    position: absolute;
+    top: 150px;
+    z-index: 9998;
+    width: 450px;
+    height: 250px;
+    background-color: rgba(241, 241, 241, 0.7);
+  }
+
+  .logo {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 70px;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', sans-serif;
+    line-height: 70px;
+  }
+  
+  section {
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  .name_section {
+    padding: 15px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: left;
+  }
+
+  .profile {
+    margin-top: 90px;
+  }
+
+  figure.left_img {
+    display: inline-block;
+  }
+
+  figure.left_img img {
+    width: 250px;
+    height: 250px;
+  }
+
+  p.right_text {
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
+    line-height: 40px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .name {
+    font-size: 30px;
+    font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
+    line-height: 100px;
+  }
+
+  .skill {
+    width: 100%;
+    margin-top: 90px;
+  }
+
+  .flex_skill {
+    display: flex;
+    /* フレックスボックス */
+    flex-wrap: wrap;
+    /*折り返し*/
+    flex-direction: row;
+    /*要素の並び 左から右*/
+    align-items: stretch;
+    /*一番大きい高さに合わせる*/
+    justify-content: space-between;
+    /*要素を均等に配置*/
+    margin-right: 80px;
+    margin-left: 80px;
+  }
+
+  .flex_skill::after {
+    display: block;
+    content: "";
+    width: 400px;
+    font-weight: 300;
+  }
+
+  .flex_skill_item {
+    width: 380px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgb(244, 244, 244);
+    box-shadow: 10px 10px 5px 0 rgb(244, 244, 244);
+    text-align: left;
+  }
+
+  .skill img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .text_skill {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 25px;
+    font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
+    vertical-align: top;
+  }
+
+  .flex_work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 90px 80px;
+  }
+
+  .flex_work_item {
+    width: 350px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgb(244, 244, 244);
+    box-shadow: 10px 10px 5px 0 rgb(244, 244, 244);
+    text-align: center;
+  }
+
+  .title_work {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .btn_code {
+    display: inline-block;
+    padding: 6px 9px;
+    border-radius: 5px;
+    background-color: rgb(40, 151, 211);
+    color: white;
+    font-size: 13px;
+    font-weight: 900;
+    text-decoration: none;
+  }
+
+  .btn_code:hover {
+    background-color: rgb(38, 98, 130);
+  }
+
+  .btn_site {
+    display: inline-block;
+    padding: 6px 9px;
+    border-radius: 5px;
+    background-color: rgb(243, 163, 43);
+    color: white;
+    font-size: 13px;
+    font-weight: 900;
+    text-decoration: none;
+  }
+
+  .btn_site:hover {
+    background-color: rgb(194, 139, 10);
+  }
+
+  .text_work {
+    width: 300px;
+    margin-top: 15px;
+    margin-left: 25px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
+    text-align: left;
+  }
+
+  .text_content_work {
+    width: 300px;
+    margin: 25px 0 15px 25px;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
+    text-align: left;
+  }
+}
+
+/*PC 終了*/
+
+/*タブレット横*/
+@media screen and (min-width: 835px) and (max-width:1280px) {
+  /*ウィンドウ幅が835px以上1280px以下の場合に適用*/
+  .slider {
+    display: flex;
+    list-style: none;
+    width: 100vw;
+    height: 75vh;
+  }
+  .logo_box {
+    position: absolute;
+    top: 130px;
+    z-index: 9998;
+    width: 400px;
+    height: 200px;
+    background-color: rgba(241, 241, 241, 0.7);
+  }
+  
+  .logo {
+    margin-top: 40px;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', sans-serif;
+    line-height: 60px;
+    text-align: center;
+  }
+
+  section {
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  .name_section {
+    padding: 15px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: left;
+  }
+
+  .profile {
+    margin-top: 90px;
+  }
+
+  figure.left_img {
+    display: inline-block;
+  }
+
+  figure.left_img img {
+    width: 250px;
+    height: 250px;
+  }
+
+  p.right_text {
+    display: inline-block;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
+    line-height: 40px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .name {
+    font-size: 30px;
+    font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
+    line-height: 100px;
+  }
+
+  .skill {
+    width: 100%;
+    margin-top: 90px;
+  }
+
+  .flex_skill {
+    display: flex;
+    /* フレックスボックス */
+    flex-wrap: wrap;
+    /*折り返し*/
+    flex-direction: row;
+    /*要素の並び 左から右*/
+    align-items: stretch;
+    /*一番大きい高さに合わせる*/
+    justify-content: space-between;
+    /*要素を均等に配置*/
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  .flex_skill_item {
+    width: 450px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgb(244, 244, 244);
+    box-shadow: 10px 10px 5px 0 rgb(244, 244, 244);
+    text-align: left;
+  }
+
+  .skill img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .text_skill {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 25px;
+    font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
+    vertical-align: top;
+  }
+
+  .flex_work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 90px 80px;
+  }
+
+  .flex_work_item {
+    width: 390px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgb(244, 244, 244);
+    box-shadow: 10px 10px 5px 0 rgb(244, 244, 244);
+    text-align: center;
+  }
+
+  .title_work {
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .btn_code {
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: rgb(40, 151, 211);
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+    text-decoration: none;
+  }
+
+  .btn_code:hover {
+    background-color: rgb(38, 98, 130);
+  }
+
+  .btn_site {
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: rgb(243, 163, 43);
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+    text-decoration: none;
+  }
+
+  .btn_site:hover {
+    background-color: rgb(194, 139, 10);
+  }
+
+  .text_work {
+    width: 300px;
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
+    text-align: left;
+  }
+
+  .text_content_work {
+    width: 300px;
+    margin: 15px 0 15px 15px;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
+    text-align: left;
+  }
+}
+
+/*タブレット横 終了*/
+
+/*タブレット縦*/
+@media screen and (min-width: 429px) and (max-width:834px) {
+  /*ウィンドウ幅が429px以上834px以下の場合に適用*/
+  .logo_box {
+    position: absolute;
+    top: 130px;
+    z-index: 9998;
+    width: 350px;
+    height: 150px;
+    background-color: rgba(241, 241, 241, 0.7);
+  }
+  
+  .logo {
+    margin-top: 25px;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', sans-serif;
+    line-height: 50px;
+    text-align: center;
+  }
+  
+  .slider {
+    display: flex;
+    list-style: none;
+    width: 100vw;
+    height: 45vh;
+  }
+
+  p.right_text {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
+    line-height: 40px;
+    text-align: left;
+    vertical-align: top;
+  }
+
+  .flex_skill {
+    display: flex;
+    /* フレックスボックス */
+    flex-wrap: wrap;
+    /*折り返し*/
+    flex-direction: row;
+    /*要素の並び 左から右*/
+    align-items: stretch;
+    /*一番大きい高さに合わせる*/
+    justify-content: space-between;
+    /*要素を均等に配置*/
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .flex_skill_item {
+    width: 370px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgb(244, 244, 244);
+    box-shadow: 10px 10px 5px 0 rgb(244, 244, 244);
+    text-align: left;
+  }
+
+  .skill img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .flex_work {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+    margin: 90px 10px;
+  }
+
+  .btn_code {
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: rgb(40, 151, 211);
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+    text-decoration: none;
+  }  
+
+  .btn_site {
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: rgb(243, 163, 43);
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+    text-decoration: none;
+  }
+
+  .text_work {
+    width: 300px;
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
+    text-align: left;
+  }
+
+  .text_content_work {
+    width: 300px;
+    margin: 15px 0 15px 25px;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
+    text-align: left;
+  }
+}
+/*タブレット縦 終了*/
+
+/*スマホ 開始*/
+@media screen and (max-width:428px) {
+  /*ウィンドウ幅が428px以下の場合に適用*/
+  nav ul li {
+    list-style: none;
+    padding: 0 10px;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', sans-serif;
+  }
+
+  .logo_box {
+    position: absolute;
+    top: 100px;
+    z-index: 9998;
+    width: 200px;
+    height: 100px;
+    background-color: rgba(241, 241, 241, 0.7);
+  }
+
+  .logo {
+    margin-top:20px;
+    font-size: 25px;
+    font-family: 'Trebuchet MS', sans-serif;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .slider {
+    display: flex;
+    list-style: none;
+    width: 100vw;
+    height: 28vh;
+  }
+
+  figure.left_img img {
+    width: 200px;
+    height: 200px;
+  }
+
+  p.right_text {
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
+    line-height: 40px;
+    text-align: left;
+    vertical-align: top;
+  }
+  
+  .name {
+    font-size: 25px;
+    font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
+    line-height: 100px;
+  }
+  
+  .flex_skill {
+    display: flex;
+    /* フレックスボックス */
+    flex-wrap: wrap;
+    /*折り返し*/
+    flex-direction: row;
+    /*要素の並び 左から右*/
+    align-items: stretch;
+    /*一番大きい高さに合わせる*/
+    justify-content: space-between;
+    /*要素を均等に配置*/
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .flex_skill_item {
+    width: 180px;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid rgb(244, 244, 244);
+    box-shadow: 6px 8px 6px 0 rgb(244, 244, 244);
+    text-align: left;
+  }
+
+  .skill img {
+    margin-left: 40px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .text_skill {
+    margin-top: 10px;
+    margin-left: 5px;
+    font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
+    vertical-align: top;
+  }
+  
+  .flex_work {
+    margin: 90px 0 90px 20px;
+  }
+
+  .flex_work_item {
+    width: 350px;
+    margin: 30px 0;
+    padding: 10px;
+    border: 1px solid rgb(244, 244, 244);
+    box-shadow: 8px 8px 5px 0 rgb(244, 244, 244);
+    text-align: center;
+  }
+
+  .btn_code {
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: rgb(40, 151, 211);
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+    text-decoration: none;
+  }
+
+  .btn_site {
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: rgb(243, 163, 43);
+    color: white;
+    font-size: 15px;
+    font-weight: 900;
+    text-decoration: none;
+  }
+
+  .text_work {
+    width: 300px;
+    margin-left: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
+    text-align: left;
+  }
+
+  .text_content_work {
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'メイリオ', Meiryo, 'ヒラギノ角ゴシック', 'Hiragino Sans', sans-serif;
+    text-align: left;
+  }
+}
+  /*スマホ 終了*/
